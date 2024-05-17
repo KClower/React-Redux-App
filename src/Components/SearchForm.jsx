@@ -58,7 +58,7 @@ const SearchForm = (props) => {
                 />
                 <button> {props.isLoading ? renderColorRing() : "Search"}</button>
             </form>
-            {isError && <p>{props.error}</p>}
+            {isError && <p className="text-danger fs-5">{props.error}</p>}
         </>
     )
 };
